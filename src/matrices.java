@@ -29,6 +29,30 @@ public class matrices {
             System.out.println("|");
         }
     }
+    public int determinadnte (int [][]x) {
+        int sp=0, sn=0, Ap, An, j, l;
+        for (int k=0;k< x.length;k++){
+                j=x.length -1 - k;
+                l=x.length -1-k;
+                Ap=1; An=1;
+            for (int i=0;i<x.length;i++){
+                Ap*=x[i][j];
+                An*=x[i][l];
+
+                    if(j==3)
+                        j=0;
+                    else
+                        j++;
+                    if (l==0)
+                        l=3;
+                    else
+                        l--;
+            }
+            sp+=Ap;
+            sn+=An;
+        }
+    return sp-sn;
+    }
     public void mulMatrices (int [][] A, int [][]B, int [][] C) {
             int s =0;
         for (int i=0;i<A.length;i++){

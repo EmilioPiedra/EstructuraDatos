@@ -1,6 +1,6 @@
 public class runMAt {
     public static void main(String[] args) {
-        int[][] a = new int[4][3];
+        int[][] a = new int[4][4];
         int[][] b = new int[3][3];
         int[][] c = new int[4][3];
         matrices objeto = new matrices(4 , 4);
@@ -29,6 +29,13 @@ public class runMAt {
                     break;
                 case 4:
                     objeto.mulMatrices(a,b,c);
+                    break;
+                case 5:
+                    System.out.println("Matriz A");
+                    objeto.leerMat(a);
+                    objeto.presentarMatrices(a);
+                    System.out.println("----------------------------");
+                    objeto.determinadnte(a);
                     break;
             }
         }while (op!=5);

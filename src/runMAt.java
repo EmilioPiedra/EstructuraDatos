@@ -1,4 +1,5 @@
-public class runMAt {
+public class
+runMAt {
     public static void main(String[] args) {
         int[][] a = new int[4][4];
         int[][] b = new int[3][3];
@@ -26,6 +27,7 @@ public class runMAt {
                     break;
                 case 3:
                     //faltametodoTrasponer
+                    // esta en el cuaderno ...zzzzzz
                     break;
                 case 4:
                     objeto.mulMatrices(a,b,c);
